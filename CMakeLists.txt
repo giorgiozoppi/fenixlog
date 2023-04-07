@@ -5,7 +5,7 @@ if (EXISTS ${VCPKG})
     set(CMAKE_TOOLCHAIN_FILE ${VCPKG}
             CACHE STRING "")
 endif ()
-cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 file(STRINGS "VERSION" VERSION_STRING)
 project(fenixlog VERSION "${VERSION_STRING}" LANGUAGES CXX)
 set(CMAKE_BUILD_TYPE_INIT Release)

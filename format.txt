@@ -1,0 +1,6 @@
+message Event {
+ fixed64 time_unix_nano = 1;
+ string source_type;
+ string name = 2;
+ map<key, value> values;
+}
